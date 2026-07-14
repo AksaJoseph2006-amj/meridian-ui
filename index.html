@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian — Private Journeys, Quietly Extraordinary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="siteNav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo" aria-label="Meridian home">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#0F172A" stroke-width="1.3"/><path d="M3 12h18M12 3c2.5 2.6 3.8 6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-6-3.8-9S9.5 5.6 12 3Z" stroke="#0F172A" stroke-width="1.3"/></svg>
+      Meridian
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#packages">Journeys</a></li>
+      <li><a href="#map">Atlas</a></li>
+      <li><a href="#faq">Concierge</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-ghost">Sign in</a>
+      <a href="#search" class="btn btn-dark">Plan a trip</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" style="padding:0;">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1800&q=80&auto=format" alt="Cliffside villas overlooking the Aegean sea at dusk">
+  </div>
+  <svg class="hero-arcs" viewBox="0 0 1280 800" preserveAspectRatio="none">
+    <path id="arc1" d="M-50,650 Q 400,400 900,300 T 1400,120" stroke="#FBBF24" stroke-width="1" fill="none" opacity="0.5"/>
+    <path id="arc2" d="M-100,300 Q 500,150 1000,450 T 1500,600" stroke="#0EA5E9" stroke-width="1" fill="none" opacity="0.4"/>
+  </svg>
+  <div class="wrap hero-content">
+    <div class="hero-eyebrow" id="heroEyebrow">—Where every destination has a story.</div>
+    <h1 id="heroTitle">Where the familiar ends and <em>extraordinary</em> begins.</h1>
+    <p class="hero-sub" id="heroSub">Private villas. Quiet coastlines. Just for you.</p>
+    <div class="hero-actions" id="heroActions">
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll to explore</div>
+
+  <div class="wrap search-wrap" id="search">
+    <div class="search-card" id="searchCard">
+      <div class="search-field">
+        <label for="fDest">Destination</label>
+        <input id="fDest" type="text" placeholder="Kyoto, Japan">
+      </div>
+      <div class="search-field">
+        <label for="fDates">Dates</label>
+        <input id="fDates" type="text" placeholder="12 – 19 Oct">
+      </div>
+      <div class="search-field">
+        <label for="fGuests">Travellers</label>
+        <select id="fGuests">
+          <option>2 Adults</option>
+          <option>1 Adult</option>
+          <option>2 Adults, 2 Children</option>
+          <option>Private group</option>
+        </select>
+      </div>
+      <div class="search-btn">
+        <button aria-label="Search journeys">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED DESTINATIONS ============ -->
+<section id="destinations">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Featured destinations</div>
+        <h2>Six places worth rearranging your year for.</h2>
+      </div>
+      <p>Each destination is scouted in person by our travel directors before it ever reaches this page.</p>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card" data-reveal>
+        <span class="tag">Japan</span>
+        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80&auto=format" alt="Kyoto temple in autumn light">
+        <div class="overlay"></div>
+        <div class="info"><h3>Kyoto</h3><div class="from">FROM<br>$1,240/night</div></div>
+      </div>
+      <div class="dest-card" data-reveal>
+        <span class="tag">Greece</span>
+        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=900&q=80&auto=format" alt="White architecture of Santorini at sunset">
+        <div class="overlay"></div>
+        <div class="info"><h3>Santorini</h3><div class="from">FROM<br>$980/night</div></div>
+      </div>
+      <div class="dest-card" data-reveal>
+        <span class="tag">Maldives</span>
+        <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=700&q=80&auto=format" alt="Overwater villa in the Maldives">
+        <div class="overlay"></div>
+        <div class="info"><h3>Amilla</h3><div class="from">FROM<br>$2,150/night</div></div>
+      </div>
+      <div class="dest-card" data-reveal>
+        <span class="tag">Morocco</span>
+        <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=700&q=80&auto=format" alt="Riad courtyard in Marrakech">
+        <div class="overlay"></div>
+        <div class="info"><h3>Marrakech</h3><div class="from">FROM<br>$640/night</div></div>
+      </div>
+      <div class="dest-card" data-reveal>
+        <span class="tag">Patagonia</span>
+        <img src="https://images.unsplash.com/photo-1531065208531-4036c0dba3ca?w=700&q=80&auto=format" alt="Mountains of Patagonia">
+        <div class="overlay"></div>
+        <div class="info"><h3>Torres del Paine</h3><div class="from">FROM<br>$1,480/night</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LUXURY EXPERIENCES ============ -->
+<section id="experiences" class="exp-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Curated experiences</div>
+        <h2>Beyond the itinerary.</h2>
+      </div>
+      <p>The moments guests remember rarely appear on any hotel brochure. We build the ones that do.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="exp-scroll" id="expScroll">
+      <div class="exp-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=700&q=80&auto=format" alt="Private yacht sailing at sunset"></div>
+        <div class="body"><h3>Private yacht charters</h3><p>Skippered crossings between islands, with dinner plated on deck as the sun goes down.</p></div>
+        <div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
+      </div>
+      <div class="exp-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80&auto=format" alt="Fine dining table setting"></div>
+        <div class="body"><h3>Michelin table access</h3><p>Reservations at rooms that don't take reservations, arranged weeks ahead of arrival.</p></div>
+        <div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
+      </div>
+      <div class="exp-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=700&q=80&auto=format" alt="Helicopter over mountain landscape"></div>
+        <div class="body"><h3>Helicopter safaris</h3><p>Low, slow passes over the Serengeti at first light, guided by a resident naturalist.</p></div>
+        <div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
+      </div>
+      <div class="exp-card">
+        <div class="img-wrap"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=700&q=80&auto=format" alt="Spa treatment room with candles"></div>
+        <div class="body"><h3>Onsen &amp; spa retreats</h3><p>Multi-day wellness stays built around a single therapist, not a rotating roster.</p></div>
+        <div class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAVEL PACKAGES ============ -->
+<section id="packages">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">Journeys</div>
+        <h2>Three ways to travel with us.</h2>
+      </div>
+      <p>Every tier includes a dedicated travel director, reachable day or night for the length of your trip.</p>
+    </div>
+    <div class="pkg-grid">
+      <div class="pkg-card" data-reveal>
+        <div class="pkg-tier">Signature</div>
+        <div class="price">$3,200 <span>/ per person</span></div>
+        <p>A refined first step into private travel — hand-picked stays, no shared transfers.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>7 nights, one destination</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Private airport transfers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>One curated experience</li>
+        </ul>
+        <a href="#" class="btn btn-ghost">Start planning</a>
+      </div>
+      <div class="pkg-card featured" data-reveal>
+        <div class="pkg-tier">Reserve</div>
+        <div class="price">$7,400 <span>/ per person</span></div>
+        <p>Our most booked itinerary — two destinations, connected by private transfer.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>12 nights, two destinations</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Private jet or first-class transfer</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Three curated experiences</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>24/7 on-ground concierge</li>
+        </ul>
+        <a href="#" class="btn btn-gold">Start planning</a>
+      </div>
+      <div class="pkg-card" data-reveal>
+        <div class="pkg-tier">Sovereign</div>
+        <div class="price">$18,500 <span>/ per person</span></div>
+        <p>A fully bespoke world tour, built from a blank page around what you actually want.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>21+ nights, unlimited stops</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Dedicated private jet</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Unlimited curated experiences</li>
+        </ul>
+        <a href="#" class="btn btn-ghost">Start planning</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERACTIVE MAP ============ -->
+<section id="map" class="map-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">The Meridian atlas</div>
+        <h2>Every route we fly, in one view.</h2>
+      </div>
+      <p>Hover a point to see the destination. These are the lanes our travel directors know best.</p>
+    </div>
+    <div class="map-stage">
+      <svg class="map-svg" viewBox="0 0 1000 460" id="mapSvg">
+        <g opacity="0.25">
+          <circle cx="500" cy="230" r="1" fill="none"/>
+          <path d="M40,120 Q500,20 960,120" stroke="rgba(255,255,255,0.15)" fill="none"/>
+          <path d="M40,230 H960" stroke="rgba(255,255,255,0.15)" fill="none"/>
+          <path d="M40,340 Q500,440 960,340" stroke="rgba(255,255,255,0.15)" fill="none"/>
+        </g>
+        <path class="map-path" id="pathA" d="M 220,150 Q 420,60 620,140" />
+        <path class="map-path" id="pathB" d="M 620,140 Q 750,220 860,180" />
+        <path class="map-path" id="pathC" d="M 220,150 Q 350,320 560,330" />
+        <path class="map-path" id="pathD" d="M 560,330 Q 700,380 860,180" />
+
+        <g>
+          <circle class="map-dot" cx="220" cy="150" r="4"/>
+          <text class="map-label" x="230" y="146">NEW YORK</text>
+        </g>
+        <g>
+          <circle class="map-dot" cx="620" cy="140" r="4"/>
+          <text class="map-label" x="630" y="136">MARRAKECH</text>
+        </g>
+        <g>
+          <circle class="map-dot" cx="860" cy="180" r="4"/>
+          <text class="map-label" x="836" y="200">KYOTO</text>
+        </g>
+        <g>
+          <circle class="map-dot" cx="560" cy="330" r="4"/>
+          <text class="map-label" x="570" y="350">AMILLA</text>
+        </g>
+      </svg>
+    </div>
+    <div class="map-legend">
+      <div class="item"><span class="dot"></span> Active destination</div>
+      <div class="item"><span class="dot" style="background:#0EA5E9;"></span> Flight lane</div>
+    </div>
+
+    <div class="counters">
+      <div class="counter"><h3 data-count="42">0</h3><span>Countries served</span></div>
+      <div class="counter"><h3 data-count="1860">0</h3><span>Private journeys planned</span></div>
+      <div class="counter"><h3 data-count="98">0</h3><span>Guest satisfaction %</span></div>
+      <div class="counter"><h3 data-count="24">0</h3><span>Hour concierge response</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testi">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;color:var(--gold);">What guests say</div>
+    <div class="testi-stage" id="testiStage">
+      <p class="testi-quote active">“Meridian didn't just book our hotel — they rebuilt our entire route around a single dinner reservation in Kyoto we didn't think was possible.”</p>
+      <p class="testi-quote">“Our travel director answered a 2am message about a delayed transfer in Marrakech within four minutes. That's the whole pitch, honestly.”</p>
+      <p class="testi-quote">“We've used three luxury agencies before this one. Meridian is the first that felt designed around us instead of around a package.”</p>
+    </div>
+    <div class="testi-person" id="testiPerson">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80&auto=format" alt="">
+      <div>
+        <div class="name">Naomi Reyes</div>
+        <div class="loc">São Paulo, Brazil</div>
+      </div>
+    </div>
+    <div class="testi-dots" id="testiDots">
+      <button class="active" aria-label="Testimonial 1"></button>
+      <button aria-label="Testimonial 2"></button>
+      <button aria-label="Testimonial 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center;">
+      <div class="eyebrow">Good to know</div>
+      <h2>Questions, answered plainly.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q">How far in advance should I book?<span class="plus"></span></button>
+        <div class="faq-a"><p>Most journeys are arranged 8–12 weeks out, though our concierge team has built full itineraries in as little as 72 hours when needed.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can you build a trip that isn't on this page?<span class="plus"></span></button>
+        <div class="faq-a"><p>Yes — the destinations shown are our most requested, not a limit. A Sovereign journey starts from a blank page with your travel director.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What's included in the concierge service?<span class="plus"></span></button>
+        <div class="faq-a"><p>A single point of contact for the length of your trip, reachable by phone or message, who can rebook flights, tables, and transfers in real time.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What is your cancellation policy?<span class="plus"></span></button>
+        <div class="faq-a"><p>Full refunds up to 30 days before departure. Between 30 and 7 days, we rebook your deposit toward a future journey rather than forfeit it.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter">
+  <div class="wrap">
+    <h2>The Meridian Dispatch.</h2>
+    <p>One email a month — a new destination, an experience worth flying for, nothing else.</p>
+    <form class="nl-form" onsubmit="return false;">
+      <label for="nlEmail" style="position:absolute;left:-9999px;">Email address</label>
+      <input id="nlEmail" type="email" placeholder="you@email.com" required>
+      <button class="btn btn-gold" type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <a href="#top" class="logo" style="color:#fff;">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.3"/><path d="M3 12h18M12 3c2.5 2.6 3.8 6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-6-3.8-9S9.5 5.6 12 3Z" stroke="#fff" stroke-width="1.3"/></svg>
+        Meridian
+      </a>
+      <p style="margin-top:18px;max-width:260px;font-size:14px;color:rgba(255,255,255,0.5);">Private travel design for people who'd rather have one perfect week than three ordinary ones.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul><li><a href="#destinations">Destinations</a></li><li><a href="#experiences">Experiences</a></li><li><a href="#packages">Journeys</a></li><li><a href="#map">Atlas</a></li></ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul><li><a href="#">About</a></li><li><a href="#">Travel directors</a></li><li><a href="#">Journal</a></li><li><a href="#">Careers</a></li></ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul><li><a href="#faq">FAQ</a></li><li><a href="#">Contact concierge</a></li><li><a href="#">Cancellation policy</a></li></ul>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <ul><li><a href="#">Instagram</a></li><li><a href="#">Journal</a></li><li><a href="#">LinkedIn</a></li></ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Meridian Travel Co.</span>
+    <span>Privacy · Terms · Booking conditions</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
