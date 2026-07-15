@@ -60,6 +60,11 @@ I started by designing the overall layout using semantic HTML and styled it with
 * Improve accessibility (ARIA labels, keyboard navigation)
 * Optimize animations for even better performance
 
+## Website Preview Link:)
+
+https://github.com/user-attachments/assets/ce4df0b7-6010-40ad-92a2-c09da5ff3b2f
+
+
 
 ## 📄 License
 
